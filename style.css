@@ -426,16 +426,14 @@ body{
     cursor: pointer;
 }
 
-@media only screen and (min-width: 950px){
-    #mob-menu{
-        display: none;
-    }
-}
-
-@media only screen and (max-width:750px) {
+@media only screen and (min-width:500px) and (max-width:750px) {
    .product, .company, .connect{
        display: none;
    }
+    
+    .header{
+        right: 0%;
+    }
 
    .list2{
        display: none;
