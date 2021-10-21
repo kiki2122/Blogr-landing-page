@@ -426,7 +426,7 @@ body{
     cursor: pointer;
 }
 
-@media only screen and (min-width:500px) and (max-width:600px){
+@media only screen and (min-width:400px) and (max-width:500px){
     .header{
         position: absolute;
         right: 0%;
@@ -434,7 +434,7 @@ body{
     }
 }
 
-@media only screen and (min-width:600px) and (max-width:750px) {
+@media only screen and (min-width:500px) and (max-width:750px) {
    .product, .company, .connect{
        display: none;
    }
