@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap');
+
+*{
+    font-family: "Catamaran", sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+    overflow-y: overlay;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(88, 87, 87);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: black;
+}
+
+.header{
+    position: absolute;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 0px 0px 0px 80px;
+    background: linear-gradient(rgb(216, 77, 52), rgb(240, 7, 77), rgb(235, 80, 92));   
+    align-content: center;
+    top: 0%;
+    left: 0%;
+    bottom: 33%;
+}
+.header img{
+    position: relative;
+    opacity: 0.3;
+    width: 160%;
+    left: -10%;
+    right: 10%;
+    top: -230%;
+}
+
+.list1{
+    list-style: none;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    left: 0%;
+    top: 0%;
+    color: white;
+    font-size: 15px;
+    padding-left: 6%;
+    padding-top: 2%;
+}
+
+.list1 li, .list2 li{
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+.blogr{
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 16px;
+    margin-top: -10px;
+}
+
+.list1 .connect:hover + .connectdropdown, .list1 .product:hover + .productdropdown, .list1 .company:hover + .companydropdown{
+    cursor: pointer;
+    display: block;
+}
+
+.list1 .connect:hover .fa-angle-down::before, .list1 .product:hover .fa-angle-down::before, .list1 .company:hover .fa-angle-down::before{
+    content: "\f106";
+}
+
+.connect:hover, .product:hover, .company:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.connectdropdown li:hover, .productdropdown li:hover, .companydropdown li:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.productdropdown:hover, .companydropdown:hover, .connectdropdown:hover{
+    display: block;
+}
+
+.connectdropdown, .productdropdown, .companydropdown {
+    display: none;
+    position: absolute;
+    top: 80%;
+    left: 78%;
+    border-radius: 20px;
+    text-align: justify;
+    list-style: none;
+    background: white;
+    color: black;
+    font-size: 15px;
+    padding: 10px;
+}   
+
+.productdropdown{
+    left: 36%;
+}
+
+.companydropdown{
+    left: 59%;
+}
+
+.connectdropdown{
+    left: 78%;
+}
+
+.list2{
+    list-style: none;
+    position: absolute;
+    display: flex;
+    color: white;
+    top: 0%;
+    right: 0%;
+    font-size: 15px;
+    padding-right: 10%;
+    padding-top: 2%;
+}
+
+#bars i, #close{
+    position: absolute;
+    right: 10%;
+    font-size: 30px;
+    color: white;
+    display: none;
+}
+
+#bars i{
+    top: 6%;
+}
+
+#close{
+    top: 4%;
+}
+
+#close:hover, #bars i{
+    cursor: pointer;
+}
+
+#mob-menu{
+    display: none;
+    position: absolute;
+    background: whitesmoke;
+    top: 10%;
+    left: 23%;
+    width: 60%;
+    height: 55%;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 8px 5px 10px rgb(141, 137, 137);
+}
+
+#mob-menu ul{
+    position: absolute;
+    list-style: none;
+    left: 15%;
+}
+
+#mob-menu ul li{
+    font-size: 15px;
+    padding: 10px;
+    font-weight:600;
+    letter-spacing: 1px;
+}
+
+#mob-menu ul li:hover{
+    cursor: pointer;
+}
+
+#mob-menu ul li i{
+    color: rgb(219, 13, 75);
+    font-weight: bold;
+}
+
+#mob-product-list, #mob-company-list, #mob-connect-list{
+    display: none;
+    position: absolute;
+    background: rgb(199, 194, 194);
+    list-style: none;
+    border-radius: 4px;
+    width: 100%;
+    
+}
+
+#mob-product-list{
+    height: 180%;
+}
+
+#mob-product-list li, #mob-company-list li, #mob-connect-list li{
+    text-align: justify;
+}
+
+#mob-menu hr{
+    position: absolute;
+    width: 70%;
+    opacity: 0.7;
+    top: 50%;
+    left: 15%;
+}
+
+#mob-list2{
+    position: absolute;
+    top: 54%;
+    left: 10%;
+    right: 0%;
+}
+
+#mob-signup{
+    background: linear-gradient(to right, rgb(235, 80, 92),rgb(219, 13, 75));
+    border-radius: 50px;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+#mob-signup:hover{
+    cursor: pointer;
+    background: white;
+    border: 1px solid rgb(219, 13, 75);
+    color: rgb(219, 13, 75);
+}
+
+.signup, .start{
+    background: white;
+    color: rgb(235, 80, 92);
+    padding: 3px 20px 3px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    margin-top: -4px;
+    transition: all 0.5s ease;
+}
+
+.signup:hover, .start:hover{
+    background: rgb(219, 13, 75);
+    color: white;
+    cursor: pointer;
+}
+
+.heading{
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    top: 25%;
+    left: 31%;
+}
+
+.heading h1{
+    letter-spacing: 2px;
+}
+
+.heading span{
+    font-size: 15px;
+}
+
+.heading ul{
+    list-style: none;
+    position: absolute;
+    display: flex;
+    color: white;
+    top: 110%;
+    left: 21%;
+    font-size: 15px;
+    padding-right: 10%;
+    padding-top: 2%;
+}
+
+.learn{
+    border: solid white;
+    border-width: thin;
+    background: transparent;
+    padding: 3px 20px 3px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    margin-top: -4px;
+    margin-left: 10px;
+    transition: all 0.5s ease;
+}
+
+.learn:hover{
+    background: white;
+    color: rgb(235, 80, 92);
+    cursor: pointer;
+}
+
+.maincontent{
+    position: absolute;
+    top: 85%;
+}
+
+.maincontent h2{
+    display: flex;
+    justify-content: center;
+}
+.maincontent ul{
+    list-style: none;
+    position: relative;
+}
+
+.main-nestedlist  li{
+    font-size: 15px;
+    text-align: justify;
+    margin-top: 5%;
+    margin-right: 25%;
+    margin-left: 5%;
+}
+
+.main-list1{
+    display: flex;
+}
+
+.main-list1 img{
+    width: 130%;
+    margin-top: -35%;
+    margin-left: -10%;
+
+}
+
+.container{
+    position: absolute;
+    background: rgb(55, 43, 75);
+    width: 100%;
+    height: 60%;
+    left: 0%;
+    top: 180%;
+    overflow: hidden;
+    border-radius: 0 80px 0 80px;
+}
+
+
+.container img{
+    position: absolute;
+    top: -80%;
+    left: -13.6%;
+    width: 58%;
+}
+
+.container-q{
+    color: white;
+    position: absolute;
+    left: 50%;
+    right: 10%;
+    top: 18%;
+    font-size: 17px;
+}
+
+.dup-c img{
+    position: absolute;
+    top: 167%;
+    left: 5%;
+}
+
+.laptop ul{
+    list-style: none;
+    position: absolute;
+    top: 280%;
+}
+
+.lap-desc-list{
+    right: 10%;
+    left: 45%;
+    font-size: 15px;
+}
+
+.laptop img{
+    position: absolute;
+    left: -16%;
+    top: 265%;
+    width: 60%;
+}
+
+.footer{
+    position:absolute;
+    bottom: -340%;
+    left: 0%;
+    right: 0%;
+    height: 50%;
+    border-radius: 0 80px 0 0;
+    background: rgb(44, 41, 51);
+    padding-top: 50px;
+}
+
+.f-list{
+    list-style: none;
+    display: flex;
+    color: white;
+}
+
+.f-list li{
+    padding-left: 30px;
+    padding-right: 135px;
+}
+
+.f-blogr{
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -0.5%;
+    margin-right: 4%;
+    margin-left: 4%;
+}
+
+.f-product-list, .f-company-list, .f-contact-list{
+    list-style: none;
+    font-size: 16px;
+    line-height: 2.5em;
+}
+
+.f-prod, .f-comp, .f-cont{
+    font-weight: bold;
+    margin-bottom: 14%;
+}
+
+.f-product-list li:hover, .f-company-list li:hover, .f-contact-list li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 950px){
+    #mob-menu{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:750px) {
+   .product, .company, .connect{
+       display: none;
+   }
+
+   .list2{
+       display: none;
+   }
+
+   #bars i{
+       display: block;
+   }
+
+   .heading{
+       left: 15%;
+   }
+
+   .heading h1{
+       font-size: 35px;
+   }
+
+   .heading ul{
+       left: 13%;
+   }
+
+   .maincontent ul{
+       position: relative;
+       display: flex;
+       flex-direction: column;
+       margin-top: 47%;
+   }
+
+   .main-list1 li img{
+       position: absolute;
+       left: 30%;
+       top: 8%;
+       width: 60%;
+   }
+
+   .main-nestedlist li{
+       text-align: center;
+       font-size: 20px;
+   }
+
+   .main-nestedlist li span{
+       font-size: 18px;
+   }
+
+   .container{
+       top: 310%;
+       height: 120%;
+   }
+
+   .container img{
+       top: -45%;
+       left: -20%;
+       right: 10%;
+       width: 140%;
+   }
+
+   .container-q{
+       text-align: center;
+       font-size: 24px;
+       top: 30%;
+       left: 10%;
+       right: 10%;
+   }
+
+   .container-q span{
+       font-size: 18px;
+   }
+
+   .dup-c img{
+       top: 280%;
+       left: 10%;
+       width: 80%;
+   }
+
+   .footer{
+       bottom: -670%;
+       height: 150%;
+   }
+
+   .footer ul{
+       display: flex;
+       flex-direction: column;
+       margin-left: 10%;
+   }
+
+   .footer ul li{
+       font-size: 20px;
+   }
+
+   .f-blogr{
+       display: none;
+   }
+
+   .f-product-list, .f-company-list, .f-contact-list{
+       padding-bottom: 15%;
+   }
+
+   .laptop img{
+       top: 438%;
+       left: 5%;
+       width: 100%;
+   }
+
+   .laptop .lap-desc-list{
+       position: absolute;
+       top: 515%;
+       text-align: center;
+       left: 0%;
+       font-size: 20px;
+   }
+
+   .laptop .lap-desc-list li span{
+       font-size: 18px;
+   }
+}
+

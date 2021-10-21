@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Blogr - Landing page</title>
+  </head>
+  <body>
+    <div class="header">
+      <img src="images/bg-pattern-intro.svg" alt="" />
+      <div class="lists">
+        <ul class="list1">
+          <li class="blogr">Blogr</li>
+          <li class="product">Product <i class="fa fa-angle-down"></i></li>
+          <ul class="productdropdown">
+            <li>Overview</li>
+            <li>Pricing</li>
+            <li>Marketplace</li>
+            <li>Features</li>
+            <li>Integrations</li>
+          </ul>
+          <li class="company">Company <i class="fa fa-angle-down"></i></li>
+          <ul class="companydropdown">
+            <li>About</li>
+            <li>Team</li>
+            <li>Blog</li>
+            <li>Careers</li>
+          </ul>
+          <li class="connect">Connect <i class="fa fa-angle-down"></i></li>
+          <ul class="connectdropdown">
+            <li>Contact</li>
+            <li>Newsletter</li>
+            <li>LinkedIn</li>
+          </ul>
+        </ul>
+
+        <ul class="list2">
+          <li>Login</li>
+          <li class="signup">Sign Up</li>
+        </ul>
+        <div id="bars"><i class="fa fa-bars" onclick="headermenu()"></i></div>
+        <div id="close" onclick="headermenu()">&#10006;</div>
+      </div>
+      <div class="heading">
+        <h1>A modern publishing platform</h1>
+        <span>Grow your audience and build your online brand</span>
+        <ul>
+          <li class="start">Start for free</li>
+          <li class="learn">Learn more</li>
+        </ul>
+      </div>
+    </div>
+    <div id="mob-menu">
+      <ul>
+        <li id="mob-product" onclick="product()">
+          Product <i id="up" class="fa fa-angle-down"></i>
+          <ul id="mob-product-list">
+            <li>Overview</li>
+            <li>Pricing</li>
+            <li>Marketplace</li>
+            <li>Features</li>
+            <li>Integrations</li>
+          </ul>
+        </li>
+        <li id="mob-company" onclick="company()">
+          Company <i class="fa fa-angle-down"></i>
+          <ul id="mob-company-list">
+            <li>About</li>
+            <li>Team</li>
+            <li>Blog</li>
+            <li>Careers</li>
+          </ul>
+        </li>
+        <li id="mob-connect" onclick="connect()">
+          Connect <i class="fa fa-angle-down"></i>
+          <ul id="mob-connect-list">
+            <li>Contact</li>
+            <li>Newsletter</li>
+            <li>LinkedIn</li>
+          </ul>
+        </li>
+      </ul>
+      <hr id="hr" />
+      <div id="mob-list2">
+        <ul>
+          <li>Login</li>
+          <li id="mob-signup">Sign up</li>
+        </ul>
+      </div>
+    </div>
+    <div class="maincontent">
+      <h2>Designed for the future</h2>
+      <ul class="main-list1">
+        <li>
+          <ul class="main-nestedlist">
+            <li>
+              <h3>Introducing an extensible editor</h3>
+              <span
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur cumque quod cupiditate inventore itaque nesciunt, eum,
+                quisquam esse doloremque blanditiis autem, qui eaque minima
+                minus ut necessitatibus nostrum nemo corrupti!</span
+              >
+            </li>
+            <li>
+              <h3>Robust content management</h3>
+              <span
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur cumque quod cupiditate inventore itaque nesciunt, eum,
+                quisquam esse doloremque blanditiis autem, qui eaque minima
+                minus ut necessitatibus nostrum nemo corrupti!</span
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <img src="images/illustration-editor-desktop.svg" alt="" />
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <img src="images/bg-pattern-circles.svg" alt="" />
+      <div class="container-q">
+        <h2>State of the art infrastructure</h2>
+        <span
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+          temporibus? Minus eum deleniti cupiditate voluptatibus inventore
+          perferendis ipsum iure. Animi dignissimos rem accusamus quae odit
+          libero praesentium voluptatum nisi quam?</span
+        >
+      </div>
+    </div>
+    <div class="dup-c">
+      <img src="images/illustration-phones.svg" alt="" />
+    </div>
+    <div class="laptop">
+      <img src="images/illustration-laptop-desktop.svg" alt="" />
+      <ul class="lap-desc-list">
+        <li>
+          <h3>Free, open, simple</h3>
+          <span
+            >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam
+            doloribus sunt ex quisquam minus eveniet distinctio voluptate
+            placeat magni temporibus dolorem, fugit praesentium ipsum fugiat
+            dicta suscipit modi voluptas. Mollitia.</span
+          >
+        </li>
+        <li>
+          <h3>Powerful tooling</h3>
+          <span
+            >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam
+            doloribus sunt ex quisquam minus eveniet distinctio voluptate
+            placeat magni temporibus dolorem, fugit praesentium ipsum fugiat
+            dicta suscipit modi voluptas. Mollitia.</span
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="footer">
+      <ul class="f-list">
+        <li class="f-blogr">Blogr</li>
+        <ul class="f-product-list">
+          <li class="f-prod">Product</li>
+          <li>Overview</li>
+          <li>Pricing</li>
+          <li>Marketplace</li>
+          <li>Features</li>
+          <li>Integrations</li>
+        </ul>
+        <ul class="f-company-list">
+          <li class="f-comp">Company</li>
+          <li>About</li>
+          <li>Team</li>
+          <li>Blog</li>
+          <li>Careers</li>
+        </ul>
+        <ul class="f-contact-list">
+          <li class="f-cont">Contact</li>
+          <li>Connect</li>
+          <li>Newsletter</li>
+          <li>LinkedIn</li>
+        </ul>
+      </ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
