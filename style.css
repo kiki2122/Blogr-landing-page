@@ -430,8 +430,22 @@ body{
     .header{
         position: absolute;
         right: 0%;
-        height: 80%;
+        height: 90%;
     }
+    
+    .main-list1 li img{
+       position: absolute;
+       left: 30%;
+       top: 5%;
+       width: 70%;
+   }
+    
+     .maincontent ul{
+       position: relative;
+       display: flex;
+       flex-direction: column;
+       margin-top: 44%;
+   }
 }
 
 @media only screen and (max-width:750px) {
