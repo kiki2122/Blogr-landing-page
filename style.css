@@ -446,6 +446,27 @@ body{
        flex-direction: column;
        margin-top: 44%;
    }
+    
+   .container{
+       top: 320%;
+       height: 130%;
+   }
+
+   .container img{
+       top: -40%;
+       left: -20%;
+       right: 10%;
+       width: 120%;
+   }
+
+   .container-q{
+       text-align: center;
+       font-size: 24px;
+       top: 34%;
+       left: 10%;
+       right: 10%;
+   }
+
 }
 
 @media only screen and (max-width:750px) {
